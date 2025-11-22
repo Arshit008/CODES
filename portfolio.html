@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html id="html" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My CSS Portfolio</title>
+
+
+<style>body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f0f4f8;
+      margin: 30;
+      padding: 30;
+      color: #333;
+    }
+
+    /* ------------------------------
+       2️⃣ NAVIGATION BAR
+    ------------------------------ */
+    nav {
+      background-color: #004d99;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    nav h2 {
+      color: white;
+      margin: 0;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    /* ------------------------------
+       3️⃣ HERO SECTION
+    ------------------------------ */
+    .hero {
+      background: linear-gradient(to right, #0073e6, #00aaff);
+      color: white;
+      text-align: center;
+      padding: 30px 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+
+
+    .hero h1 {
+      font-size: 42px;
+      text-transform: uppercase;
+      font-style: italic;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
+
+
+    .hero p {
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    .hero button {
+      background-color: white;
+      color: #0073e6;
+      padding: 12px 25px;
+      border: black;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+      
+    }
+
+    .hero button:hover {
+      background-color: #cce7ff;
+    }
+
+    /* ------------------------------
+       4️⃣ ABOUT SECTION (FLEXBOX)
+    ------------------------------ */
+    .about {
+      display: flex;
+      flex-wrap: column ;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 10px;
+      background-color: white;    }
+
+
+    .about-text {
+      max-width: 500px;
+      margin: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .about-text h2 {
+      color: #004d99;
+      text-align: center;
+      text-decoration: underline;
+    }
+    .h2{
+      text-align: center;
+    }
+
+    /* ------------------------------
+       5️⃣ SKILLS SECTION (BOX MODEL)
+    ------------------------------ */
+    .skills {
+      background-color: #e6f2ff;
+      padding: 30px 15px;
+    }
+
+    .skills h2 {
+      text-align: center;
+      color: #004d99;
+      margin-bottom: 25px;
+    }
+
+    .skill-box {
+      background-color: white;
+      border: 2px solid #0073e6;
+      border-radius: 10px;
+      width: 200px;
+      margin: 15px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* ------------------------------
+       6️⃣ FOOTER SECTION
+    ------------------------------ */
+    footer {
+      background-color: #004d99;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* ------------------------------
+       7️⃣ RESPONSIVE DESIGN
+    ------------------------------ */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 28px; }
+      .about { flex-direction: column; }
+      .skill-box { width: 90%; }
+    }</style>
+</head>
+
+<body>
+
+  <!-- NAVIGATION BAR -->
+  <nav>
+    <h2>My Portfolio</h2>
+    <ul>
+      <li><a href="#html">Home</a></li>
+      <li><a href="#abt">About</a></li>
+      <li><a href="#skill">Skills</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Hello, I'm Arshit Sandil</h1>
+    <p>Full Stack Web Developer</p>
+  
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="abt">
+    <div class="about-text">
+      <h2 class="h2">About Me</h2>
+      <p>
+        Hello I am Arshit Sandil student of Lovely Professional University, Phagwara. I am passionate about web development and design. I love creating beautiful and functional websites that provide great user experiences.
+        this is my portfolio website where you can find more about me and my work.
+      </p>
+    </div>
+    <div class="about-text" style="padding:  0px 20px; margin: 10px;">
+      <h2 class="h2">Experiences</h2>
+      <p>Intern at Google(6 M) | EX- Adobe | Currently at Microsoft | Upcoming entrepreneur | Freelancer
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skill">
+    <h2>My Skills </h2>
+    <div class="skill-container">
+      <div class="skill-box">HTML5</div>
+      <div class="skill-box">CSS3</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">Python</div>
+      <div class="skill-box">c++</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="Contact">
+    <p>Connect with me 
+      <a href="https://www.linkedin.com/in/arshit-sandil-b44b50220/" target="_blank">LinkedIn</a> | 
+      <a href="https://github.com/Arshit008" target="_blank">GitHub</a>
+      | <a href=""mailto:arshitsandilnew@gmail.com>Mail me</a>
+      |<a href="tel:+9198164202xx">Contact</a>
+    <p>&copy; 2025 My Portfolio</p>
+  </footer>
+
+</body>
+</html>
